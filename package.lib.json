@@ -1,0 +1,42 @@
+{
+  "name": "@bssn/ppid-layanan-frontend",
+  "version": "1.0.0",
+  "description": "Module",
+  "style": "ppid-layanan-frontend.css",
+  "module": "ppid-layanan-frontend.js",
+  "type": "module",
+  "types": "./type/index.d.ts",
+  "sideEffects": ["*.css"],
+  "files": ["*.js", "*.css", "type"],
+  "exports": {
+    ".": {
+      "import": "./ppid-layanan-frontend.js",
+      "types": "./type/index.d.ts"
+    },
+    "./ppid-layanan-frontend.css": "./ppid-layanan-frontend.css"
+  },
+  "peerDependencies": {
+    "@bssn/ui-kit-frontend": "^1.1.6",
+    "axios": "^1.11.0",
+    "flowbite": "^3.1.2",
+    "pinia": "^3.0.3",
+    "tailwindcss": "^4.1.11",
+    "vee-validate": "^4.15.1",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1",
+    "yup": "^1.7.0"
+  },
+  "author": "Agung Kurniawan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/repospheres/ppid-layanan-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/repospheres/ppid-layanan-frontend/issues"
+  },
+  "homepage": "https://github.com/repospheres/ppid-layanan-frontend#readme",
+  "publishConfig": {
+    "@bssn:registry": "https://gitlab.bssn.go.id/api/v4/projects/$CI_PROJECT_ID/packages/npm/"
+  }
+}
